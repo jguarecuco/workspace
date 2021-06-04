@@ -60,7 +60,7 @@ export default class Login extends ApiComponent<RouteComponentProps<any>, any> {
                         transform: 'translate(-50%,-50%)',
                     }}
                 >
-                    <Card title="CapRover Login" style={{ width: 350 }}>
+                    <Card title="Workspace" style={{ width: 350 }}>
                         <NormalLoginForm
                             onLoginRequested={(
                                 password: string,
@@ -122,7 +122,7 @@ class NormalLoginForm extends React.Component<
                     onChange={(e) => {
                         self.setState({ passwordEntered: `${e.target.value}` })
                     }}
-                    placeholder="Password"
+                    placeholder="Contraseña"
                     autoFocus
                 />
                 <div style={{ marginTop: 20, marginBottom: 20 }}>
@@ -140,7 +140,7 @@ class NormalLoginForm extends React.Component<
                     </Row>
                 </div>
                 <Collapse>
-                    <Collapse.Panel header="Remember Me" key="1">
+                    <Collapse.Panel header="Recuerdame" key="1">
                         <Radio.Group
                             onChange={(e) => {
                                 console.log(e.target.value)
